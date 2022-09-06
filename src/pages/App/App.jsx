@@ -10,17 +10,11 @@ export default function App() {
 
   return (
     <main className="App">
-      { user ?
-        <>
-          <NavBar user={user} setUser={setUser} />
-          <Routes>
-            {/* Route components in here */}
-            {/* <Route path='/' element={<Component />} /> */}
-          </Routes>
-        </>
-        :
-        <AuthPage setUser={setUser} />
-      }
+      <NavBar user={user} setUser={setUser} />
+      <Routes>
+        {/* Route components in here */}
+        {/* <Route path='/login' element={<Component />} /> */}
+      </Routes>
     </main>
   );
 }
