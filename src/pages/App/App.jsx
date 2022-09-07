@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
-import AuthPage from '../AuthPage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
+import FeaturedPage from '../FeaturedPage/FeaturedPage';
 import './App.css';
 
 export default function App() {
@@ -11,6 +11,7 @@ export default function App() {
   return (
     <main className="App">
       <NavBar user={user} setUser={setUser} />
+      <FeaturedPage />
       <Routes>
         {/* Route components in here */}
         {/* <Route path='/login' element={<Component />} /> */}
