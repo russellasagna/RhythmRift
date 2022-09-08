@@ -1,17 +1,22 @@
-const SpotifyAPI = require('../');
+const fetch = require('node-fetch');
 
 module.exports = {
-    show,
+    getSongs,
 };
 
-const BASE_URL = 'https://api.spotify.com';
+const BASE_URL = 'https://itunes.apple.com/search?term=jack+johnson&limit=5';
 
-function show(req, res) {
+async function getSongs(req, res) {
+    for (let i = 0; i < 10; i++) {
+        console.log("hello");
+    }
     const options = {
         headers: {
           'Authorization': '',
           'Content-Type': 'application/json',
         }
     };
-    const songs = await fetch(BASE_URL, options).then(res => res.json());
+    const songs = await fetch(BASE_URL).then(res => res.json());
+    console.log(songs);
+    res.json(songs);
 }

@@ -5,6 +5,6 @@ const router = express.Router();
 const featuresCtrl = require('../../controllers/api/features');
 
 // GET /api/features
-router.get('/', featuresCtrl.show);
+router.get('/', featuresCtrl.getSongs);
 
 module.exports = router;
