@@ -4,12 +4,9 @@ module.exports = {
     getSongs,
 };
 
-const BASE_URL = 'https://itunes.apple.com/search?term=jack+johnson&limit=5';
+const BASE_URL = 'https://itunes.apple.com/search?term=jack+johnson&limit=2';
 
 async function getSongs(req, res) {
-    for (let i = 0; i < 10; i++) {
-        console.log("hello");
-    }
     const options = {
         headers: {
           'Authorization': '',

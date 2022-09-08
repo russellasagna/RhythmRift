@@ -4,20 +4,18 @@ import './FeaturedPage.css';
 
 export default function FeaturedPage() {
     const [songs, setSongs] = useState([]);
+    const results = Object.values(songs)[1];
     useEffect(function() {
         async function getSongs() {
             const songs = await musicAPI.getTracks();
-            setSongs(Object.values(songs)[1]);
+            setSongs(songs);
         }
         getSongs();
     }, []);
     return (
         <div>
-            <br />
-            iTunes JSON:
-            <br />
-            <p>
-            {songs.map((song) => song.kind)}
+            <p style={{color: "red"}}>
+            {JSON.stringify(results[0])}
             </p>
         </div>
     );
