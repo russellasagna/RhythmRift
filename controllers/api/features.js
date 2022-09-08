@@ -14,6 +14,6 @@ async function getSongs(req, res) {
         }
     };
     const songs = await fetch(BASE_URL).then(res => res.json());
-    console.log(songs);
+    // console.log(songs);
     res.json(songs);
 }
