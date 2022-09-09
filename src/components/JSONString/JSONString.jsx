@@ -14,7 +14,7 @@ export default function JSONString() {
     return (
         <>
             <p style={{ color: "red" }}>
-                {JSON.stringify(results[0])}
+                {/* {JSON.stringify(results[0])} */}
             </p>
         </>
     );
