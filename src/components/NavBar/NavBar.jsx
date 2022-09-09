@@ -16,16 +16,16 @@ export default function NavBar({ user, setUser }) {
         <br />
         { user ?
           <>
-            <h1>Welcome, {user.name}</h1>
+            <Link to='/profile'>My Profile</Link>
+            <br />
             <Link to='' onClick={handleLogOut}>Log Out</Link>
+            <h1>Welcome, {user.name}</h1>
           </>
           :
           <>
             <Link to='/signin'>Sign In</Link>
           </>
         }
-        <br />
-        <Link to='/profile'>My Profile</Link>
       </nav>
     </>
   );
