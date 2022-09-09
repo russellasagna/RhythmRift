@@ -4,11 +4,9 @@ import './FeaturedPage.css';
 export default function FeaturedPage() {
 
     return (
-        <div>
+        <main>
+            <h1>Rhythm Rift</h1>
             <JSONString />
-            <div>
-                
-            </div>
-        </div>
+        </main>
     );
 }
