@@ -1,0 +1,7 @@
+div.dance-floor {
+    width: 100vh;
+    margin: 5vh 0;
+    padding: 10vh 2vh;
+    border: 2px solid white;
+    border-radius: 5vh;
+}

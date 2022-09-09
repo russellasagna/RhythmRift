@@ -1,0 +1,8 @@
+
+
+nav > a:hover {
+    padding: 1vh;
+    border: 0.5vh solid white;
+    border-radius: 2vh;
+    background-color: rgba(255, 255, 255, 0.2);
+}
