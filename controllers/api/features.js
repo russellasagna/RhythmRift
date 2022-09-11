@@ -4,7 +4,7 @@ module.exports = {
     getSongs,
 };
 
-const BASE_URL = 'https://itunes.apple.com/search?term=jack+johnson&limit=2';
+const BASE_URL = 'https://itunes.apple.com/search?term=jack+johnson&limit=1';
 
 async function getSongs(req, res) {
     const options = {
@@ -14,6 +14,6 @@ async function getSongs(req, res) {
         }
     };
     const songs = await fetch(BASE_URL).then(res => res.json());
-    // console.log(songs);
-    res.json(songs);
+    console.log(songs);
+    res.json(songs.results);
 }

@@ -10,7 +10,6 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <>
       <nav>
         <Link to='/'>Home</Link>
         <br />
@@ -27,6 +26,5 @@ export default function NavBar({ user, setUser }) {
           </>
         }
       </nav>
-    </>
   );
 }

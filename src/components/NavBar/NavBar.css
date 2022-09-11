@@ -1,8 +1,7 @@
-
-
 nav > a:hover {
-    padding: 1vh;
+    padding: 0vh;
     border: 0.5vh solid white;
     border-radius: 2vh;
     background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: white 0em 0em 2em;
 }
