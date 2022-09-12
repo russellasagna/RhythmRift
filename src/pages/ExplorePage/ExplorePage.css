@@ -1,0 +1,41 @@
+.main {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+}
+
+.main form {
+    float: left;
+    width: 25rem;
+}
+
+.cardgroup {
+    display: grid;
+    grid-template-rows: repeat(5, 50vh);
+    grid-template-columns: repeat(5, 50vh);
+    gap: 2vh;
+    
+    float: left;
+    text-align: center;
+    border: 0.5vh solid white;
+    overflow: scroll;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vh;
+    height: 40vh;
+    overflow: auto;
+    border: 1vh solid white;
+}
+
+.card a {
+    position: relative;
+    top: 20%;
+}
+
+.card img {
+    width: 50%;
+}

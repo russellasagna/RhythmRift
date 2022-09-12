@@ -13,7 +13,7 @@ export default function ExplorePage() {
     const [songs, setSongs] = useState([]);
     console.log(songs);
     return (
-        <div>
+        <div className='main'>
             {/* <SearchBar getSongs={getSongs} query={query} setQuery={setQuery}/> */}
             <form onSubmit={getSongs}>
                 <input
@@ -25,7 +25,7 @@ export default function ExplorePage() {
                 />
                 <button type="submit">Search</button>
             </form>
-            {songs.length > 2 ?
+            {/* {songs.length > 2 ?
                 <>
                     yes
                     <br />
@@ -37,7 +37,7 @@ export default function ExplorePage() {
                     <br />
                     {typeof songs.trackName}
                 </>
-            }
+            } */}
             <div className='cardgroup'>
                 {songs.map((r) =>
                     <>
@@ -48,7 +48,8 @@ export default function ExplorePage() {
                             <div style={{ color: "cyan" }}>
                                 {r.artistName} <br />
                             </div>
-                            <a href={r.artistViewUrl}>See on Apple Music</a>
+                            <img src={r.artworkUrl100}></img>
+                            <a href={r.artistViewUrl} target={'_blank'}>See on Apple Music</a>
                         </div>
                     </>
                 )}
