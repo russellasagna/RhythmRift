@@ -8,7 +8,7 @@ a {
     color: white;
 }
 
-a:hover {
+nav a:hover {
     padding: 0vh;
     border: 0.5vh solid white;
     border-radius: 2vh;

@@ -41,7 +41,7 @@ export default function ExplorePage() {
             <div className='cardgroup'>
                 {songs.map((r) =>
                     <>
-                        <div className='card'>
+                        <a className='card'>
                             <div style={{ color: "red" }}>
                                 {r.trackName} <br />
                             </div>
@@ -49,8 +49,8 @@ export default function ExplorePage() {
                                 {r.artistName} <br />
                             </div>
                             <img src={r.artworkUrl100}></img>
-                            <a href={r.artistViewUrl} target={'_blank'}>See on Apple Music</a>
-                        </div>
+                            <a href={r.trackViewUrl} target={'_blank'}>See on Apple Music</a>
+                        </a>
                     </>
                 )}
             </div>

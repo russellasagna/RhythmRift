@@ -12,10 +12,9 @@
 .cardgroup {
     display: grid;
     grid-template-rows: repeat(5, 50vh);
-    grid-template-columns: repeat(5, 50vh);
-    gap: 2vh;
+    grid-template-columns: repeat(4, 50vh);
     
-    float: left;
+    float: right;
     text-align: center;
     border: 0.5vh solid white;
     overflow: scroll;
@@ -28,7 +27,6 @@
     width: 50vh;
     height: 40vh;
     overflow: auto;
-    border: 1vh solid white;
 }
 
 .card a {
@@ -36,6 +34,20 @@
     top: 20%;
 }
 
+div > a:hover {
+    bottom: 0.5vh;
+    right: 0.5vh;
+}
+
+a:hover {
+    padding: 0vh;
+    border: 0.5vh solid white;
+    border-radius: 2vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: white 0em 0em 2em;
+    position: relative;
+}
+
 .card img {
-    width: 50%;
+    width: 20%;
 }
