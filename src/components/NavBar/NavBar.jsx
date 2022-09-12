@@ -10,21 +10,22 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-      <nav>
-        <Link to='/'>Home</Link>
-        <br />
-        { user ?
-          <>
-            <Link to='/profile'>My Profile</Link>
-            <br />
-            <Link to='' onClick={handleLogOut}>Log Out</Link>
-            <h1>Welcome, {user.name}</h1>
-          </>
-          :
-          <>
-            <Link to='/signin'>Sign In</Link>
-          </>
-        }
-      </nav>
+    <nav>
+      <h1>
+        <Link to='/featured'>Rhythm Rift</Link>
+      </h1>
+      <Link to='/featured'>Home</Link>
+      <br />
+      {user ?
+        <span>
+          <Link to='/profile'>My Profile</Link>
+          <br />
+          <Link to='' onClick={handleLogOut}>Log Out</Link>
+          <h1>Welcome, {user.name}</h1>
+        </span>
+        :
+        <Link to='/signin'>Sign In</Link>
+      }
+    </nav>
   );
 }
