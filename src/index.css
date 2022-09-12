@@ -7,3 +7,27 @@ a {
     text-decoration: none;
     color: white;
 }
+
+a:hover {
+    padding: 0vh;
+    border: 0.5vh solid white;
+    border-radius: 2vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: white 0em 0em 2em;
+}
+
+.cardgroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0.5vh solid red;
+}
+
+.card {
+    width: 40vh;
+    height: 20vh;
+    /* overflow-x: scroll; */
+    overflow-y: auto;
+    border: 1vh solid white;
+}

@@ -6,7 +6,7 @@ module.exports = {
 
 async function getSongs(req, res) {
     console.log(req.body.query);
-    const BASE_URL = `https://itunes.apple.com/search?term=${req.body.query}&limit=20`;
+    const BASE_URL = `https://itunes.apple.com/search?media=music&term=${req.body.query}&limit=3`;
     // const options = {
     //     headers: {
     //       'Authorization': '',

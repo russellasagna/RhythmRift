@@ -19,12 +19,12 @@ export default function NavBar({ user, setUser }) {
       <Link to='/explore'>Explore</Link>
       <br />
       {user ?
-        <span>
+        <>
           <Link to='/profile'>My Profile</Link>
           <br />
           <Link to='' onClick={handleLogOut}>Log Out</Link>
           <h1>Welcome, {user.name}</h1>
-        </span>
+        </>
         :
         <Link to='/signin'>Sign In</Link>
       }
