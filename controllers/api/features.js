@@ -4,15 +4,15 @@ module.exports = {
     getSongs,
 };
 
-const BASE_URL = 'https://itunes.apple.com/search?term=jack+johnson&limit=1';
-
 async function getSongs(req, res) {
-    const options = {
-        headers: {
-          'Authorization': '',
-          'Content-Type': 'application/json',
-        }
-    };
+    console.log(req.body.query);
+    const BASE_URL = `https://itunes.apple.com/search?term=${req.body.query}&limit=20`;
+    // const options = {
+    //     headers: {
+    //       'Authorization': '',
+    //       'Content-Type': 'application/json',
+    //     }
+    // };
     const songs = await fetch(BASE_URL).then(res => res.json());
     console.log(songs);
     res.json(songs.results);

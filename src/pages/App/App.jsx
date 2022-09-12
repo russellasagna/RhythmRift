@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import NavBar from '../../components/NavBar/NavBar';
 import FeaturedPage from '../FeaturedPage/FeaturedPage';
+import ExplorePage from '../ExplorePage/ExplorePage';
 import AuthPage from '../AuthPage/AuthPage';
 import './App.css';
 
@@ -16,6 +17,7 @@ export default function App() {
         {/* Route components in here */}
         <Route path='/signin' element={<AuthPage user={user} setUser={setUser}/>} />
         <Route path='/featured' element={<FeaturedPage />} />
+        <Route path='/explore' element={<ExplorePage />} />
         <Route path="/*" element={<Navigate to="/featured" />} />
       </Routes>
     </main>

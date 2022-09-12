@@ -16,6 +16,8 @@ export default function NavBar({ user, setUser }) {
       </h1>
       <Link to='/featured'>Home</Link>
       <br />
+      <Link to='/explore'>Explore</Link>
+      <br />
       {user ?
         <span>
           <Link to='/profile'>My Profile</Link>
