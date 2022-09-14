@@ -6,7 +6,5 @@ const favoritesCtrl = require('../../controllers/api/favorites');
 router.get('/', favoritesCtrl.getFavorites);
 // POST /api/favorites/:id
 router.post('/:id', favoritesCtrl.addFavorite);
-// DELETE /api/favorites/:id
-router.delete('/:id', favoritesCtrl.deleteFavorite);
 
 module.exports = router;

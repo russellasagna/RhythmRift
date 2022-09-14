@@ -4,7 +4,6 @@ const Song = require('../../models/favorite');
 module.exports = {
     getFavorites,
     addFavorite,
-    deleteFavorite,
 };
 
 async function getFavorites(req, res) {
