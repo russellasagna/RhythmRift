@@ -24,9 +24,11 @@ app.use(require('./config/checkToken'));
 const port = process.env.PORT ||  3001;
 
 // Put API routes here, before the "catch all" route
-app.use('/api/favorites', require('./routes/api/favorites'));
-app.use('/api/features', require('./routes/api/features'));
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/features', require('./routes/api/features'));
+// Protect the api routes below from anon users
+const ensureLoggedIn = require('./config/ensureLoggedIn');
+app.use('/api/favorites', ensureLoggedIn, require('./routes/api/favorites'));
 
 
 // The following "catch all" route (note the *) is necessary
