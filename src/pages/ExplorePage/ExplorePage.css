@@ -74,16 +74,18 @@ form input {
     border-radius: 2vh;
 }
 
-form button + button {
-
-}
-
 form button[type='submit'] {
     font-size: 5vh;
+    margin-bottom: 2vh;
+    animation-name: search;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: both;
 }
 
 button[type='submit']:hover {
-    text-shadow: white 0em 0em 0.2em;
+    box-shadow: white 0em 0em 0.2em;
+    animation-name: none;
 }
 
 a + button {
@@ -92,4 +94,17 @@ a + button {
     font-size: 2vh;
     padding: 0;
     border: none;
+}
+
+@keyframes search {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(200%);
+        text-shadow: white 0em 0em 0.5em;
+    }
+    100% {
+        filter: brightness(100%);
+    }
 }

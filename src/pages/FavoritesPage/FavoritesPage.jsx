@@ -22,6 +22,7 @@ export default function FavoritesPage() {
         {favorites.map((f) =>
           <FavoritesCard
             trackName={f.trackName}
+            artistName={f.artistName}
             artworkUrl100={f.artworkUrl100}
             trackViewUrl={f.trackViewUrl}
             key={f.trackId}

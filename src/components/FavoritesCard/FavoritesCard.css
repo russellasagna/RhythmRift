@@ -17,3 +17,50 @@ div img {
 hr {
     width: 100%;
 }
+
+div>h1 {
+    margin: 0;
+    color: red;
+    animation-name: track-name;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+div>a {
+    margin: 2vh 0;
+    animation-name: apple-music;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+div>a:hover {
+    position: relative;
+    left: 0vh;
+}
+
+@keyframes track-name {
+    0% {
+        color: white;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: white
+    }
+}
+
+@keyframes apple-music {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(200%);
+        text-shadow: white 0em 0em 0.5em;
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
