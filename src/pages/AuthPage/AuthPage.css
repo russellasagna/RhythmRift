@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  color: red;
+}
+
+form button {
+  padding: 2vh;
+  border: 0.5vh solid black;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+form button:hover {
+
+}
