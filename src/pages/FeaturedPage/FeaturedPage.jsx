@@ -5,7 +5,7 @@ export default function FeaturedPage() {
 
     return (
         <main>
-            <FeaturedSong />
+            {/* <FeaturedSong /> */}
         </main>
     );
 }
