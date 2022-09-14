@@ -4,7 +4,7 @@ const BASE_URL = '/api/favorites';
 
 // Retrieve favorites for the logged in user
 export function getFavorites() {
-  return sendRequest(`${BASE_URL}`, 'GET');
+  return sendRequest(`${BASE_URL}`);
 }
 // Add a favorite to the list
 export function addFavorite(data) {
