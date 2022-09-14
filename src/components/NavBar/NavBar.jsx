@@ -20,7 +20,7 @@ export default function NavBar({ user, setUser }) {
       <br />
       {user ?
         <>
-          <Link to='/profile'>My Profile</Link>
+          <Link to='/favorites'>My Favorites</Link>
           <br />
           <Link to='' onClick={handleLogOut}>Log Out</Link>
           <h1>Welcome, {user.name}</h1>
