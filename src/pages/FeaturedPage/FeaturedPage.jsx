@@ -1,13 +1,11 @@
-import DanceFloor from '../../components/DanceFloor/DanceFloor';
-import JSONString from '../../components/JSONString/JSONString';
+import FeaturedSong from '../../components/FeaturedSong/FeaturedSong';
 import './FeaturedPage.css';
 
 export default function FeaturedPage() {
 
     return (
         <main>
-            <DanceFloor />
-            <JSONString />
+            <FeaturedSong />
         </main>
     );
 }
