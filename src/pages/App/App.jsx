@@ -4,7 +4,6 @@ import { getUser } from '../../utilities/users-service';
 import NavBar from '../../components/NavBar/NavBar';
 import FeaturedPage from '../FeaturedPage/FeaturedPage';
 import ExplorePage from '../ExplorePage/ExplorePage';
-import ExploreSong from '../ExploreSong/ExploreSong';
 import FavoritesPage from '../FavoritesPage/FavoritesPage';
 import AuthPage from '../AuthPage/AuthPage';
 import './App.css';
@@ -20,7 +19,6 @@ export default function App() {
         <Route path='/signin' element={<AuthPage user={user} setUser={setUser}/>} />
         <Route path='/featured' element={<FeaturedPage />} />
         <Route path='/explore' element={<ExplorePage user={user} />} />
-        <Route path='/explore/:exploreId' element={<ExploreSong />} />
         <Route path='/favorites' element={<FavoritesPage user={user} setUser={setUser}/>} />
         <Route path="/*" element={<Navigate to="/featured" />} />
       </Routes>

@@ -16,6 +16,8 @@ export default function FavoritesPage() {
   if (!favorites) return null;
   return (
     <main className="FavoritesPage">
+      <hr />
+      <h1>Favorites</h1>
       <div>
         {favorites.map((f) =>
           <FavoritesCard

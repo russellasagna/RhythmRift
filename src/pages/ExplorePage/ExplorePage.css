@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vh;
+
+    width: 110vh;
     overflow: scroll;
 }
 
@@ -19,10 +20,12 @@
     grid-template-rows: repeat(1, 50vh);
     grid-template-columns: repeat(2, 50vh);
     
-    height: 200vh;
+    height: 100vh;
     float: right;
     text-align: center;
     border: 0.5vh solid white;
+    border-radius: 2vh;
+    padding: 0vh 4vh;
     overflow: scroll;
 }
 
@@ -55,18 +58,38 @@ a:hover {
 }
 
 .card img {
-    width: 20%;
+    width: 40%;
 }
 
-button[type='submit'] {
+form {
+    margin: 2vh;
+}
+
+form input {
+    width: 50vh;
+    height: 5vh;
+    font-size: 4vh;
+    outline: none;
+    border: none;
+    border-radius: 2vh;
+}
+
+form button + button {
+
+}
+
+form button[type='submit'] {
     font-size: 5vh;
 }
 
 button[type='submit']:hover {
-    text-shadow: white 0em 0em 0.1em;
+    text-shadow: white 0em 0em 0.2em;
 }
 
 a + button {
-    background-color: inherit;
-    font-size: 20vh;
+    background-color: transparent;
+    color: white;
+    font-size: 2vh;
+    padding: 0;
+    border: none;
 }

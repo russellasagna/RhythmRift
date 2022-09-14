@@ -12,7 +12,7 @@ export default function ExplorePage({ user }) {
     async function handleAddFavorite(song) {
         const data = {
             trackId: song.trackId,
-            artistId: song.artistId,
+            artistName: song.artistName,
             trackName: song.trackName,
             artworkUrl100: song.artworkUrl100,
             trackViewUrl: song.trackViewUrl,
@@ -29,14 +29,17 @@ export default function ExplorePage({ user }) {
     return (
         <div className='main'>
             <form onSubmit={getSongs}>
+                <button type="submit">Search</button>
+                <div>
                 <input
                     type="text" name='keyword' value={query}
                     onChange={(evt) => setQuery(evt.target.value)}
                     style={{ "textAlign": "center" }}
                     autoComplete="off" placeholder="Enter keywords..."
                     spellCheck="false"
-                />
-                <button type="submit">Search</button>
+                    />
+                {/* <button type="submit">Search</button> */}
+                </div>
             </form>
             <div className='cardgroup'>
                 {songs.map((r) =>
