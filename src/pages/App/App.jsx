@@ -15,10 +15,9 @@ export default function App() {
     <main className="App">
       <NavBar user={user} setUser={setUser} />
       <Routes>
-        {/* Route components in here */}
         <Route path='/signin' element={<AuthPage user={user} setUser={setUser}/>} />
         <Route path='/featured' element={<FeaturedPage />} />
-        <Route path='/explore' element={<ExplorePage user={user} />} />
+        <Route path='/explore' element={<ExplorePage/>} />
         <Route path='/favorites' element={<FavoritesPage user={user} setUser={setUser}/>} />
         <Route path="/*" element={<Navigate to="/featured" />} />
       </Routes>
